@@ -11,13 +11,15 @@ console.log(nomeLettere, nomeLettere.length)
 
 
 
-for (let i = 0; i < nomeLettere.length; i++){
+for (let i = 0; i < nomeLettere.length/2; i++){
     let lettera = nomeLettere[i]
     let ultimaLettera = nomeLettere.length - 1
     console.log (lettera, nomeLettere[ultimaLettera - i])
-    if (lettera === nomeLettere[ultimaLettera - i]){
+    if (lettera != nomeLettere[ultimaLettera - i]){
         //console.log (lettera, nomeLettere)
-        console.log ('ok')
+        console.log ('no')
+    } else {
+        console.log('si')
     }
 }
 
